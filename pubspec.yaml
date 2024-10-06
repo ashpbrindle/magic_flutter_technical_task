@@ -1,0 +1,43 @@
+name: magic_flutter_technical_task
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  get_it: ^8.0.0
+  go_router: ^14.3.0
+  freezed_annotation: ^2.4.4
+
+  # Internal Packages
+  entity:
+    path: packages/entity
+  repository:
+    path: packages/repository
+  usecase:
+    path: packages/usecase
+  database:
+    path: packages/database
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  bloc_test: ^9.1.7
+  mocktail: ^1.0.4
+  freezed: ^2.5.2
+  build_runner: ^2.4.11
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
